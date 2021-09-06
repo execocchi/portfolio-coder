@@ -1,0 +1,100 @@
+@import'../../scss/display/header';
+@import'../../scss/display/main';
+@import'../../scss/display/footer';
+@import'../../scss/base/mixins';
+
+
+
+
+.proyect1{
+    
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 4px;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows:150px,repeat(3,1fr);
+    grid-column-gap:4px;
+    grid-row-gap:4px;
+    border-top: 10 px solid grey;
+    border-top-style:outset;
+    
+    
+    
+    
+   
+        
+     
+    h2,h3,h4,h5,h6{
+        color:nth($colors,2)
+    }
+
+    p{
+        font-family: $font-family;
+        font-size: $font-size-p;
+        color:nth($colors,1);
+        font-weight: bolder;
+        
+    }
+
+     div img {
+        height: 100%;
+        width: 100%;
+        box-shadow: 2px 2px 2px grey;
+        
+         
+    }
+
+    .grey-background{
+        
+        @include challenge-solution;
+        
+    }
+        
+    &__header{
+    display: block;
+    grid-column: 1/3;
+    justify-self: center;
+    text-shadow: 0px 0px 2px #8f4be2dc;
+    margin: 30px 0px;
+        h2{
+            font-size: 36px;
+        }
+    }
+
+    &__description{
+    align-self: center;
+    margin-right: 10px;
+    padding: 15px;
+    text-shadow: 0px 0px 2px grey;  
+    }
+
+    
+}
+@media (min-width:425px) and (max-width:768px){
+    .proyect1{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    
+    .proyect1 div p{
+        font-size: $font-size-alternative-p;
+    }
+    .poryect1 div h2,h3,h4,h5,h6{
+        font-size: $font-size-alternative-titles;
+    }
+}
+@media (max-width:425px){
+    .proyect1{
+        display:flex;
+        flex-direction: column;
+    }
+    .proyect1 div p{
+        font-size: $font-size-alternative-p;
+    }
+    .poryect1 div h2,h3,h4,h5,h6{
+        font-size: $font-size-alternative-titles;
+    }
+
+}

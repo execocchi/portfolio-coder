@@ -1,0 +1,36 @@
+footer{
+    margin-top: 12px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3px;
+    background-color: #333333;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    box-shadow: 0px 0px 3px gray;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    
+    a {
+        color: white;
+        text-decoration: none;
+
+            &:hover{
+                opacity: 0.6;
+            }
+    }
+}
+
+@media (max-width:425px){
+    footer div p{
+        font-size: 18px;
+    }
+}
+@media (min-width:425px) and (max-width:768px){
+    footer div p{
+        font-size: 18px;
+    }
+}
+
+

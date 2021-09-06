@@ -1,0 +1,142 @@
+@import'../../scss/display/header';
+@import'../../scss/display/main';
+@import'../../scss/display/footer';
+@import'../../scss/base/mixins';
+
+
+.ux-process{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top: 10 px solid grey;
+    border-top-style:outset;
+   
+
+    h2,h3,h4,h5,h6{
+        color:nth($colors,2);
+        text-shadow: 0px 0px 2px #8f4be2dc;
+        padding: 0px 8px;
+       
+        
+    }
+    
+    h2{
+        font-size: 36px;
+        text-shadow: 0px 0px 2px #8f4be2dc;
+        margin: 30px 0px;
+        
+
+    }
+    h3{
+        font-size: 32px;
+        text-shadow: 0px 0px 2px #8f4be2dc;
+        
+    }
+
+    p{
+        font-family: $font-family;
+        font-size: $font-size-p;
+        color:nth($colors,1);
+        font-weight: bolder;
+        margin: 8px auto;
+        padding: 0px 8px;
+        text-shadow: 0px 0px 2px grey;
+          
+    }
+
+     div img {
+        height: 100%;
+        width: 100%;
+        
+     
+    }
+
+    .research{
+        margin: 32px 8px;
+        margin-bottom: 16px;
+    }
+
+    .paragraph{
+        margin: 0px 8px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(2,50%);
+        grid-column-gap:4px;
+        grid-row-gap:8px;
+
+        
+
+        img{
+            box-shadow: none;
+        }
+    }
+
+    .titles{
+        margin:32px 8px;
+        
+
+            h3,h5{ 
+                margin-bottom: 16px;
+            }
+    }
+
+    .article1{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    }   
+
+    
+    .article2{
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: 100% ;
+    grid-column-gap:4px;
+    }
+}
+
+
+@media (min-width:425px) and (max-width:768px){
+   
+   .ux-process h2,h3,h4,h5,h6{
+       font-size: 20px;
+   }
+   .ux-process p{
+       font-size: 18px;
+   }
+   .ux-process .paragraph{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       margin: 1px;
+   }
+   .ux-process .article2{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       margin: 1px;
+   }
+}
+@media (max-width:425px){
+    
+    .article1 h3,h4,h5,h6{
+        font-size: 20px;
+    }
+    .ux-process p{
+        font-size: 18px;
+    }
+    .ux-process .paragraph{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 1px;
+    }
+    .ux-process .article2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 1px;
+    }
+} 
+        
+     

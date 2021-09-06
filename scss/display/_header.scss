@@ -1,0 +1,212 @@
+@import '../base/colors';
+@import '../base/variables';
+@import '../base/mixins';
+
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('../../fonts/roboto/Roboto-Medium.ttf') format('ttf');
+  font-display: swap;
+}
+
+#header {
+  margin: 60px 10px;
+  padding: 10px;
+
+  nav {
+    font-family: 'roboto-medium';
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .profile {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+
+    .header__logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        margin-top: 4px;
+        width: 380px;
+      }
+
+      .header__intro {
+        margin-top: 50px;
+        margin-left: 120px;
+        color: nth($colors, 5);
+        font-weight: bolder;
+        font-size: 68px;
+      }
+    }
+
+    #header__info {
+      padding-left: 10px;
+      margin-bottom: 40px;
+      margin-right: 150px;
+      font-size: 36px;
+      line-height: 52px;
+      color: nth($colors, 1);
+      font-weight: bold;
+
+      .title {
+        color: nth($colors, 5);
+      }
+
+      
+    }
+  }
+}
+
+@media (min-width:1201px){
+
+    
+    #header__info #paragraph{
+         display: none;      
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    #header{
+        display: flex;
+        
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        
+
+        .header__logo {
+            width: 100%;
+            border-bottom: inset;
+            border-width: 2px;
+            border-color: #c7c7c7;
+            display: flex;
+            padding-bottom: 10px;
+            
+            
+
+            img {
+                margin-top: 2px;
+                width: 250px;
+            }
+        
+        }
+
+        .header__intro {
+            margin-top: 280px;
+            padding-right: 200px; 
+            color: nth($colors, 5);
+            font-weight: bolder;
+            font-size: 42px ;
+                
+            
+        }
+
+        #header__info {
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            justify-items: center;
+            margin-bottom: 40px;
+            margin-left: 10px;
+            font-size: $font-size-titles;
+
+                p {
+                    color: nth($colors, 1);
+                    font-weight: bolder;
+                    font-size: 24px;
+                }
+
+                .title {
+                    color: nth($colors, 5);
+                }
+
+                #name {
+                    justify-self: left;
+                }
+
+                #paragraph {
+                    padding-top: 40px;
+                    grid-column: 1/4;
+                    justify-self: flex-start;
+                    font-size: $font-size-p;
+                    font-style: italic;
+                    
+                }
+            }
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+    
+        .header__logo{
+            display: flex;
+            flex-direction: column;
+            
+            
+        }
+            
+        img {
+            margin: 0px auto;
+             
+        }
+    
+        .header__intro {
+            margin: 0px auto;
+        }
+        #header__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+                p,.title{
+                    font-size:28px;
+                }
+            
+        }
+    }  
+    
+}
+
+@media (max-width:425px){
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+
+        
+            
+        img {
+            margin: 0px auto;
+            width: 300px !important;
+        }
+    
+        .header__intro {
+               
+            font-size: 42px !important;
+            margin-right: 80px;
+            
+        }
+
+
+        #header__info {
+            display: none
+              
+        }
+    }
+}
+
