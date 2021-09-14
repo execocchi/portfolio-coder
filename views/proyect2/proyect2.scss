@@ -103,6 +103,9 @@
     .poryect2 div h2,h3,h4,h5,h6{
         font-size: $font-size-alternative-titles;
     }
+    h1,h2,h3,h4,h5,h6,a ,p{
+        text-shadow: none !important;
+    }
 }
 @media (max-width:425px){
     .proyect2{
@@ -114,6 +117,9 @@
     }
     .poryect2 div h2,h3,h4,h5,h6{
         font-size: $font-size-alternative-titles;
+    }
+    h1,h2,h3,h4,h5,h6,a ,p{
+        text-shadow: none !important;
     }
 
 }

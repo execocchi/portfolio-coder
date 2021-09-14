@@ -552,7 +552,9 @@ footer {
   .proyect1 div p {
     font-size: 18px; }
   .poryect1 div h2, h3, h4, h5, h6 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  h1, h2, h3, h4, h5, h6, a, p {
+    text-shadow: none !important; } }
 
 @media (max-width: 425px) {
   .proyect1 {
@@ -561,7 +563,9 @@ footer {
   .proyect1 div p {
     font-size: 18px; }
   .poryect1 div h2, h3, h4, h5, h6 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  h1, h2, h3, h4, h5, h6, a, p {
+    text-shadow: none !important; } }
 
 @font-face {
   font-family: 'montserrat-regular';
@@ -801,7 +805,9 @@ footer {
   .proyect2 div p {
     font-size: 18px; }
   .poryect2 div h2, h3, h4, h5, h6 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  h1, h2, h3, h4, h5, h6, a, p {
+    text-shadow: none !important; } }
 
 @media (max-width: 425px) {
   .proyect2 {
@@ -810,7 +816,9 @@ footer {
   .proyect2 div p {
     font-size: 18px; }
   .poryect2 div h2, h3, h4, h5, h6 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  h1, h2, h3, h4, h5, h6, a, p {
+    text-shadow: none !important; } }
 
 @font-face {
   font-family: 'montserrat-regular';
@@ -1042,7 +1050,9 @@ footer {
   .proyect3 div p {
     font-size: 18px; }
   .poryect3 div h2, h3, h4, h5, h6 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  h1, h2, h3, h4, h5, h6, a, p {
+    text-shadow: none !important; } }
 
 @media (max-width: 425px) {
   .proyect3 {
@@ -1051,7 +1061,9 @@ footer {
   .proyect3 div p {
     font-size: 18px; }
   .poryect3 div h2, h3, h4, h5, h6 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  h1, h2, h3, h4, h5, h6, a, p {
+    text-shadow: none !important; } }
 
 @font-face {
   font-family: 'montserrat-regular';
@@ -1302,7 +1314,9 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 1px; } }
+    margin: 1px; }
+  h1, h2, h3, h4, h5, h6, a, p {
+    text-shadow: none !important; } }
 
 @media (max-width: 425px) {
   .article1 h3, h4, h5, h6 {
@@ -1318,4 +1332,6 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 1px; } }
+    margin: 1px; }
+  h1, h2, h3, h4, h5, h6, a, p {
+    text-shadow: none !important; } }
